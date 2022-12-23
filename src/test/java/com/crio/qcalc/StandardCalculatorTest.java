@@ -13,7 +13,7 @@ public class StandardCalculatorTest {
         standardCalculator = new StandardCalculator();
     }
 
-
+    
 
 
     @Test
@@ -30,6 +30,22 @@ public class StandardCalculatorTest {
         standardCalculator.subtract(1,1);
         int actualResult = standardCalculator.getResult();
         Assertions.assertEquals(0, actualResult);
+    }
+
+    @Test
+    @DisplayName("Test Multiplication of Two Integers")
+    void testMultiplicationOperation(){
+        standardCalculator.multiply(1,2);
+        int actualResult = standardCalculator.getResult();
+        Assertions.assertEquals(2, actualResult);
+    }
+
+    @Test
+    @DisplayName("Test Division of Two Integers")
+    void testDivisionOperation(){
+        standardCalculator.divide(2,1);
+        int actualResult = standardCalculator.getResult();
+        Assertions.assertEquals(2, actualResult);
     }
 
 
