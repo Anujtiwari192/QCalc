@@ -23,7 +23,6 @@ dependencies {
 	}
 }
 
-
 test {
 	reports {
 		junitXml.enabled = true
@@ -45,4 +44,3 @@ test {
 		}
 	}
 }
-
