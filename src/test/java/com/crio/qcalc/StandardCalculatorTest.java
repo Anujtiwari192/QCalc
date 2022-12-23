@@ -13,9 +13,6 @@ public class StandardCalculatorTest {
         standardCalculator = new StandardCalculator();
     }
 
-    
-
-
     @Test
     @DisplayName("Test Addition of Two Integers")
     void testAdditionOperation(){
@@ -33,20 +30,21 @@ public class StandardCalculatorTest {
     }
 
     @Test
-    @DisplayName("Test Multiplication of Two Integers")
-    void testMultiplicationOperation(){
-        standardCalculator.multiply(1,2);
+    @DisplayName("Test Division of Two Integers")
+    void testDivisionOperation(){
+        standardCalculator.divide(4,2);
         int actualResult = standardCalculator.getResult();
         Assertions.assertEquals(2, actualResult);
+
     }
 
     @Test
-    @DisplayName("Test Division of Two Integers")
-    void testDivisionOperation(){
-        standardCalculator.divide(2,1);
+    @DisplayName("Test Multiplication of Two Integers")
+    void testMultiplicationOperation(){
+        standardCalculator.multiply(1,1);
         int actualResult = standardCalculator.getResult();
-        Assertions.assertEquals(2, actualResult);
-    }
+        Assertions.assertEquals(1, actualResult);
 
+    }
 
 }
